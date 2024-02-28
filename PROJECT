@@ -7,4 +7,10 @@ layout:
 - go.kubebuilder.io/v4
 projectName: k8s-operator-test
 repo: github.com/rajsinghtech/homer-operator.git
+resources:
+- controller: true
+  group: core
+  kind: Pod
+  path: k8s.io/api/core/v1
+  version: v1
 version: "3"
